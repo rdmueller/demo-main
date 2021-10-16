@@ -1,0 +1,5 @@
+== docToolchain Demo
+
+This is a demo repository which implements some features of docToolchain
+
+- a github action deploys the results of `generateSite` to github pages
