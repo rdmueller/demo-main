@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: rdmueller/doctoolchain:v2.0.1 
+    runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     env:
@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: ./dtcw local generateSite && cp ./build/microsite/output ./public
+        run: ./dtcw docker generateSite && cp ./build/microsite/output ./public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
