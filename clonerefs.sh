@@ -7,5 +7,5 @@ function cloneOrPull {
 
 # duplicate the following two lines for each remote repository
 cloneOrPull git@github.com:docToolchain/demo-sub.git build/refs/demo-sub
-cp build/refs/demo-sub/src/docs/service.adoc src/docs/services/01_serviceA.adoc
+cp build/refs/demo-sub/src/docs/service.adoc src/docs/services/01_serviceA.adoc || echo "failed to init sub-doc"
 
