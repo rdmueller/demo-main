@@ -16,10 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: prepare
-        run:
-          - chmod +x dtcw
-          - chmod +x clonerefs.sh
-          - ./clonerefs.sh
+        run: |
+          chmod +x dtcw
+          chmod +x clonerefs.sh
+          ./clonerefs.sh
       - name: generateSite
         run: ./dtcw docker generateSite
       - name: copyToPublic
