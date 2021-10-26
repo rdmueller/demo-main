@@ -65,28 +65,28 @@ microsite.with {
     siteFolder = '../site'
 
     // the title of the microsite, displayed in the upper left corner
-    title = '##site-title##'
+    title = 'demo-main'
     // the next items configure some links in the footer
     //
     // contact eMail
     // example: mailto:bert@example.com
-    footerMail = '##footer-email'
+    footerMail = ''
     //
     // twitter account url
-    footerTwitter = '##twitter-url##'
+    footerTwitter = 'https://twitter.com/doctoolchain'
     //
     // Stackoverflow QA
-    footerSO = '##Stackoverflow-url##'
+    footerSO = ''
     //
     // Github Repository
     footerGithub = '##Github-url##'
     //
     // Slack Channel
-    footerSlack = '##Slack-url##'
+    footerSlack = ''
     //
     // Footer Text
     // example: <small class="text-white">build with docToolchain and jBake <br /> theme: docsy</small>
-    footerText = '##Footer-Text##'
+    footerText = '<small class="text-white">built with <a href="https://doctoolchain.org">docToolchain</a> and <a href="https://jbake.org">jBake</a> <br /> theme: <a href="https://www.docsy.dev/">docsy</a></small>'
     //
     // site title if no other title is given
     title = 'docToolchain'
