@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: chmod +x dtcw && ./dtcw local generateSite && cp -r ./build/microsite/output ./public
+        run: chmod +x dtcw && ./dtcw docker generateSite && cp -r ./build/microsite/output ./public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
