@@ -15,9 +15,15 @@ jobs:
       DTC_HEADLES: true
     steps:
       - uses: actions/checkout@v2
-      - name: Build
-        run: chmod +x dtcw && ./dtcw docker generateSite && cp -r ./build/microsite/output ./public
-
+      - name: prepare
+        run:
+          - chmod +x dtcw
+          - chmod +x clonerefs.sh
+          - ./clonerefs.sh
+      - name: generateSite
+        run: ./dtcw docker generateSite
+      - name: copyToPublic
+        run: cp -r ./build/microsite/output ./public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
