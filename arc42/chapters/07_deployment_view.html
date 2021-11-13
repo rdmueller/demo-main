@@ -53,17 +53,19 @@
       div.bg-light {
           background-color: rgba(127, 180, 224, 0.3) !important;
       }
-  span.tag {
+      //for blog posts
+
+  span.blogtag {
       border-radius: 10px;
       background-color: #30638E;
       color: white;
       padding: 5px 10px;
   }
-  span.tag a {
+  span.blogblogtag a {
       color: white;
       padding: 0
   }
-  span.tag span {
+  span.blogtag span {
       margin-left: 10px;
       border-radius: 10px;
       background-color: white;
@@ -144,24 +146,24 @@
 	
 
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
-    <a class="navbar-brand" href="../../">
+    <a class="navbar-brand" href="../../index.html">
         <span class="navbar-logo"></span><span
             class="font-weight-bold">docToolchain</span>
     </a>
     <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
         <ul class="navbar-nav mt-2 mt-lg-0">
-    <li class="nav-item mr-4 mb-2 mb-lg-0"><img src="../../images/status.png" width="16" height="16" onerror="this.style.display='none'"></li>
+    <li class="nav-item mr-4 mb-2 mb-lg-0"><!--img src="../../images/status.png" alt="status" width="16" height="16" onerror="this.style.display='none'"--></li>
             <!--
-            [-:[[title:image:arc42-logo.png[arc42] Template, order:-1, filename:null, uri:arc42/arc42.html], [title:search, order:0, filename:null, uri:search.html]], arc42:[[title:Cross-cutting Concepts, order:08, filename:null, uri:arc42/chapters/08_concepts.html], [title:Deployment View, order:07, filename:null, uri:arc42/chapters/07_deployment_view.html], [title:Solution Strategy, order:04, filename:null, uri:arc42/chapters/04_solution_strategy.html], [title:Introduction and Goals, order:01, filename:null, uri:arc42/chapters/01_introduction_and_goals.html], [title:Glossary, order:12, filename:null, uri:arc42/chapters/12_glossary.html], [title:System Scope and Context, order:03, filename:null, uri:arc42/chapters/03_system_scope_and_context.html], [title:Quality Requirements, order:10, filename:null, uri:arc42/chapters/10_quality_scenarios.html], [title:Runtime View, order:06, filename:null, uri:arc42/chapters/06_runtime_view.html], [title:Design Decisions, order:09, filename:null, uri:arc42/chapters/09_design_decisions.html], [title:Building Block View, order:05, filename:null, uri:arc42/chapters/05_building_block_view.html], [title:Architecture Constraints, order:02, filename:null, uri:arc42/chapters/02_architecture_constraints.html], [title:Risks and Technical Debts, order:11, filename:null, uri:arc42/chapters/11_technical_risks.html]]]
+            [-:[[title:image:arc42-logo.png[arc42] Template, order:-1, filename:null, uri:arc42/arc42.html], [title:search, order:0, filename:null, uri:search.html]], arc42:[[title:System Scope and Context, order:3, filename:null, uri:arc42/chapters/03_system_scope_and_context.html], [title:Quality Requirements, order:10, filename:null, uri:arc42/chapters/10_quality_scenarios.html], [title:Glossary, order:12, filename:null, uri:arc42/chapters/12_glossary.html], [title:Solution Strategy, order:4, filename:null, uri:arc42/chapters/04_solution_strategy.html], [title:Introduction and Goals, order:1, filename:null, uri:arc42/chapters/01_introduction_and_goals.html], [title:Building Block View, order:5, filename:null, uri:arc42/chapters/05_building_block_view.html], [title:Risks and Technical Debts, order:11, filename:null, uri:arc42/chapters/11_technical_risks.html], [title:Design Decisions, order:9, filename:null, uri:arc42/chapters/09_design_decisions.html], [title:Cross-cutting Concepts, order:8, filename:null, uri:arc42/chapters/08_concepts.html], [title:Deployment View, order:7, filename:null, uri:arc42/chapters/07_deployment_view.html], [title:Architecture Constraints, order:2, filename:null, uri:arc42/chapters/02_architecture_constraints.html], [title:Runtime View, order:6, filename:null, uri:arc42/chapters/06_runtime_view.html]]]
             -->
 
             <li class="nav-item mr-4 mb-2 mb-lg-0">
                 <a class="nav-link active" href="../../arc42/chapters/01_introduction_and_goals.html"><span>arc42</span></a>
             </li>
             <!--
-            [-:[[title:image:arc42-logo.png[arc42] Template, order:-1, filename:null, uri:arc42/arc42.html], [title:search, order:0, filename:null, uri:search.html]], arc42:[[title:Introduction and Goals, order:01, filename:null, uri:arc42/chapters/01_introduction_and_goals.html], [title:Architecture Constraints, order:02, filename:null, uri:arc42/chapters/02_architecture_constraints.html], [title:System Scope and Context, order:03, filename:null, uri:arc42/chapters/03_system_scope_and_context.html], [title:Solution Strategy, order:04, filename:null, uri:arc42/chapters/04_solution_strategy.html], [title:Building Block View, order:05, filename:null, uri:arc42/chapters/05_building_block_view.html], [title:Runtime View, order:06, filename:null, uri:arc42/chapters/06_runtime_view.html], [title:Deployment View, order:07, filename:null, uri:arc42/chapters/07_deployment_view.html], [title:Cross-cutting Concepts, order:08, filename:null, uri:arc42/chapters/08_concepts.html], [title:Design Decisions, order:09, filename:null, uri:arc42/chapters/09_design_decisions.html], [title:Quality Requirements, order:10, filename:null, uri:arc42/chapters/10_quality_scenarios.html], [title:Risks and Technical Debts, order:11, filename:null, uri:arc42/chapters/11_technical_risks.html], [title:Glossary, order:12, filename:null, uri:arc42/chapters/12_glossary.html]]]
+            [-:[[title:image:arc42-logo.png[arc42] Template, order:-1, filename:null, uri:arc42/arc42.html], [title:search, order:0, filename:null, uri:search.html]], arc42:[[title:Introduction and Goals, order:1, filename:null, uri:arc42/chapters/01_introduction_and_goals.html], [title:Quality Requirements, order:10, filename:null, uri:arc42/chapters/10_quality_scenarios.html], [title:Risks and Technical Debts, order:11, filename:null, uri:arc42/chapters/11_technical_risks.html], [title:Glossary, order:12, filename:null, uri:arc42/chapters/12_glossary.html], [title:Architecture Constraints, order:2, filename:null, uri:arc42/chapters/02_architecture_constraints.html], [title:System Scope and Context, order:3, filename:null, uri:arc42/chapters/03_system_scope_and_context.html], [title:Solution Strategy, order:4, filename:null, uri:arc42/chapters/04_solution_strategy.html], [title:Building Block View, order:5, filename:null, uri:arc42/chapters/05_building_block_view.html], [title:Runtime View, order:6, filename:null, uri:arc42/chapters/06_runtime_view.html], [title:Deployment View, order:7, filename:null, uri:arc42/chapters/07_deployment_view.html], [title:Cross-cutting Concepts, order:8, filename:null, uri:arc42/chapters/08_concepts.html], [title:Design Decisions, order:9, filename:null, uri:arc42/chapters/09_design_decisions.html]]]
 
-            [-:[-, [[title:image:arc42-logo.png[arc42] Template, order:-1, filename:null, uri:arc42/arc42.html], [title:search, order:0, filename:null, uri:search.html]]], arc42:[arc42, [[title:Introduction and Goals, order:01, filename:null, uri:arc42/chapters/01_introduction_and_goals.html], [title:Architecture Constraints, order:02, filename:null, uri:arc42/chapters/02_architecture_constraints.html], [title:System Scope and Context, order:03, filename:null, uri:arc42/chapters/03_system_scope_and_context.html], [title:Solution Strategy, order:04, filename:null, uri:arc42/chapters/04_solution_strategy.html], [title:Building Block View, order:05, filename:null, uri:arc42/chapters/05_building_block_view.html], [title:Runtime View, order:06, filename:null, uri:arc42/chapters/06_runtime_view.html], [title:Deployment View, order:07, filename:null, uri:arc42/chapters/07_deployment_view.html], [title:Cross-cutting Concepts, order:08, filename:null, uri:arc42/chapters/08_concepts.html], [title:Design Decisions, order:09, filename:null, uri:arc42/chapters/09_design_decisions.html], [title:Quality Requirements, order:10, filename:null, uri:arc42/chapters/10_quality_scenarios.html], [title:Risks and Technical Debts, order:11, filename:null, uri:arc42/chapters/11_technical_risks.html], [title:Glossary, order:12, filename:null, uri:arc42/chapters/12_glossary.html]]]]
+            [-:[-, [[title:image:arc42-logo.png[arc42] Template, order:-1, filename:null, uri:arc42/arc42.html], [title:search, order:0, filename:null, uri:search.html]]], arc42:[arc42, [[title:Introduction and Goals, order:1, filename:null, uri:arc42/chapters/01_introduction_and_goals.html], [title:Quality Requirements, order:10, filename:null, uri:arc42/chapters/10_quality_scenarios.html], [title:Risks and Technical Debts, order:11, filename:null, uri:arc42/chapters/11_technical_risks.html], [title:Glossary, order:12, filename:null, uri:arc42/chapters/12_glossary.html], [title:Architecture Constraints, order:2, filename:null, uri:arc42/chapters/02_architecture_constraints.html], [title:System Scope and Context, order:3, filename:null, uri:arc42/chapters/03_system_scope_and_context.html], [title:Solution Strategy, order:4, filename:null, uri:arc42/chapters/04_solution_strategy.html], [title:Building Block View, order:5, filename:null, uri:arc42/chapters/05_building_block_view.html], [title:Runtime View, order:6, filename:null, uri:arc42/chapters/06_runtime_view.html], [title:Deployment View, order:7, filename:null, uri:arc42/chapters/07_deployment_view.html], [title:Cross-cutting Concepts, order:8, filename:null, uri:arc42/chapters/08_concepts.html], [title:Design Decisions, order:9, filename:null, uri:arc42/chapters/09_design_decisions.html]]]]
             -->
 
         </ul>
@@ -212,6 +214,24 @@
                             
                             <li class="td-sidebar-nav__section-title">
                                 <a class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section "
+                                   href="../../arc42/chapters/10_quality_scenarios.html">Quality Requirements</a>
+                            </li>
+                            
+                            
+                            <li class="td-sidebar-nav__section-title">
+                                <a class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section "
+                                   href="../../arc42/chapters/11_technical_risks.html">Risks and Technical Debts</a>
+                            </li>
+                            
+                            
+                            <li class="td-sidebar-nav__section-title">
+                                <a class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section "
+                                   href="../../arc42/chapters/12_glossary.html">Glossary</a>
+                            </li>
+                            
+                            
+                            <li class="td-sidebar-nav__section-title">
+                                <a class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section "
                                    href="../../arc42/chapters/02_architecture_constraints.html">Architecture Constraints</a>
                             </li>
                             
@@ -257,24 +277,6 @@
                                    href="../../arc42/chapters/09_design_decisions.html">Design Decisions</a>
                             </li>
                             
-                            
-                            <li class="td-sidebar-nav__section-title">
-                                <a class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section "
-                                   href="../../arc42/chapters/10_quality_scenarios.html">Quality Requirements</a>
-                            </li>
-                            
-                            
-                            <li class="td-sidebar-nav__section-title">
-                                <a class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section "
-                                   href="../../arc42/chapters/11_technical_risks.html">Risks and Technical Debts</a>
-                            </li>
-                            
-                            
-                            <li class="td-sidebar-nav__section-title">
-                                <a class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section "
-                                   href="../../arc42/chapters/12_glossary.html">Glossary</a>
-                            </li>
-                            
                             <!--li class="td-sidebar-nav__section-title">
                                 <a  href="/docs/overview/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Overview</a>
                             </li>
@@ -302,7 +304,7 @@
                 class="fas fa-tasks fa-fw"></i> Create project issue</a-->
         <!--a href="https://example.docsy.dev/docs/_print/" id="print"><i class="fa fa-print fa-fw"></i> Print
         entire section</a-->
-
+        
         <hr />
         <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -497,11 +499,11 @@ when your infrastructure is more complex.</p>
     <button class="feedback--answer feedback--answer-yes">Yes</button>
     <button class="feedback--answer feedback--answer-no">No</button>
     <p class="feedback--response feedback--response-yes">
-        Glad to hear it! Please <a href="##issue-url##?title=Docs%3A+Feedback+for+%27Deployment+View%27%20👍&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23page:arc42/chapters/07_deployment_view.adoc">tell us
+        Glad to hear it! Please <a href="##issue-url##?title=Docs%3A+Feedback+for+%27Deployment+View%27%20%F0%9F%91%8D&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23page:arc42/chapters/07_deployment_view.adoc">tell us
     how we can improve</a>.
     </p>
     <p class="feedback--response feedback--response-no">
-        Sorry to hear that. Please <a href="##issue-url##?title=Docs%3A+Feedback+for+%27Deployment+View%27%20👎&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23page:arc42/chapters/07_deployment_view.adoc">tell
+        Sorry to hear that. Please <a href="##issue-url##?title=Docs%3A+Feedback+for+%27Deployment+View%27%20%F0%9F%91%8E&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23page:arc42/chapters/07_deployment_view.adoc">tell
     us how we can improve</a>.
     </p>
 </div>
